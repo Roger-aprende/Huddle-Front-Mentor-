@@ -1,7 +1,16 @@
-/* Importar fuentes:
-    poppins
-    lexend deca 
-    */
+@font-face {
+	font-family: 'lexend deca';
+	src: url(../assets/fonts/LexendDeca-VariableFont_wght.ttf) format(TrueType);
+}
+
+@font-face {
+	font-family: 'poppins';
+	src: url(../assets/fonts/Poppins-Bold.ttf) format(TrueType);
+	src: url(../assets/fonts/Poppins-Light.ttf) format(TrueType);
+	src: url(../assets/fonts/Poppins-Regular.ttf) format(TrueType);
+	src: url(../assets/fonts/Poppins-Medium.ttf) format(TrueType);
+	src: url(../assets/fonts/Poppins-SemiBold.ttf) format(TrueType);
+}
 
 *, ::before, ::after {
  box-sizing: border-box;
@@ -248,26 +257,17 @@ a{
 
 .netword{
     display: flex;
-    gap: 1.5rem;
+    gap: 1rem;
     margin-top: 1.5rem;
 }
 
-.netword-face,
-.netword-insta,
-.netword-what{
-    width: 20px;
-    height: 20px;
-    background-color: blue;
-    border-radius: 3px;
+.netword__icons{
+    --size: 35px;
+    width: var(--size);
+    height: var(--size);
+    cursor: pointer;
 }
 
-.netword-insta{
-    background-color: rosybrown;
-}
-
-.netword-what{
-    background-color: green;
-}
 
 .refe{
     color: var(--color-main);
